@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Jaldi:wght@400;700&display=swap');
+:root{
+    --main-color : #000000;
+    --second-color : #FFFFFF;
+    --body-color : #011135;
+
+
+    --main-font : 'Inter', sans-serif;
+    --second-font : 'Jaldi', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#011135, #000000);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px;
+    background-color: #cccccc;
+    font-family: var(--main-font), var(--second-font);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 120vh; 
+}
+
+header{ 
+    min-height:50px;
+    background:lightcyan; 
+}
+  
+  footer{ 
+    min-height:50px; 
+    background:PapayaWhip; 
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section{
+    margin-top: 200px;
+}
+
+.container{
+    max-width: 1100px;
+}
+
+.navbar{
+    position: fixed;
+    left:0;
+    right:0;
+    background-color: #000000;
+    border-bottom: 1px solid var(--second-color);
+}
+
+.navbar .nav-wrapper{
+    background-color: var(--main-color);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.nav-wrapper .logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: -150px;
+}
+
+
+.nav-wrapper .logo .nama-logo{
+    font-size: 1.25rem;
+    font-family: var(--main-color);
+    font-weight: 300;
+    color: var(--second-color);
+}
+
+
+
+.nav-wrapper .menu-wrapper{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-wrapper .menu-wrapper .menu{
+    display: flex;
+    gap: 50px;
+    margin-right: -150px;
+}
+
+.menu-wrapper .menu .menu-link{
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--second-color);
+}
+
+.menu-wrapper .menu .menu-link:hover{
+    color: #4070f4;
+}
+
+.menu-wrapper .menu .menu-link.active{
+    color: var(--body-color)
+}
+
+
+/* home start */
+.home{
+    display: flex;
+    align-items: center;
+    top: 150px;
+}
+
+.home .textbox-wrapper .heading{
+    font-size: 3rem;
+    font-family: var(--main-font);
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.home .textbox-wrapper .sub-heading{
+    font-size: 2rem;
+    font-family: var(--second-font);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.home .textbox-wrapper .c1{
+    font-family: var(--second-font);
+    width: 1100px;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+    font-weight: 500;
+    color:#FFFFFF;
+    font-size: 1.5rem;
+}
+
+.home .textbox-wrapper .c2{
+    font-family: var(--second-font);
+    width: 1100px;
+    align-items: center;
+    position: absolute;
+    top: 170px;
+    font-weight: 500;
+    color:#FFFFFF;
+    font-size: 1.5rem;
+}
+
+.home .inputbox .textbox-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.home .inputbox{
+    position: absolute;
+    top: 300px;
+    right: 400px;
+}
+
+input[type=text]{
+    margin-left: 150px;
+    width:200px;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing: border-box;
+    transition:.3s;
+    background-color: #000000;
+    color:white;
+
+  }
+  
+  input[type=text]:focus{
+    border-color:var(--second-color);
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+
+input[type=button]{
+    width: 50px;
+    height: 30px;
+    font-family:var(--second-color);
+    font-size:small;
+    font-weight: 800;
+}
+
+input[type=button]:hover{
+    background-color:green;
+}
+
+.home .textbox-wrapper .menu-clear .menu-link{
+    position: absolute;
+    top: 125px;
+    width: 50px;
+    height: 40px;
+    margin-left: 132px;
+    font-family: var(--second-font);
+    font-weight: 500;
+    font-size: 1rem;
+    color:#FFFFFF;
+}
+
+.home .textbox-wrapper .menu-clear .menu-link:hover{
+    color:red;
+}
+
+.home .textbox-wrapper .menu-clear .menu-link.active{
+    color:var(--body-color);
+}
+
+/* start input */
+
+
+
+
+.footer{
+    background-color: #000000;
+    border-top: 1px solid var(--second-color);
+}
+
+.footer .footer-wrapper{
+    background-color: var(--main-color);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.footer-wrapper .copyright{
+    font-size: 1rem;
+    font-family: var(--main-color);
+    font-weight: 300;
+    color: var(--second-color);
+    margin-left: -150px;
+}
+
+.footer-wrapper .terms{
+    font-size: 1rem;
+    font-family: var(--main-color);
+    font-weight: 300;
+    color: var(--second-color);
+    margin-right: -150px;
+}

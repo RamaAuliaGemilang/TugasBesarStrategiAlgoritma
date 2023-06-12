@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Jaldi:wght@400;700&display=swap');
+:root{
+    --main-color : #000000;
+    --second-color : #FFFFFF;
+    --body-color : #011135;
+
+
+    --main-font : 'Inter', sans-serif;
+    --second-font : 'Jaldi', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#011135, #000000);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px;
+    background-color: #cccccc;
+    font-family: var(--main-font), var(--second-font);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 130vh; 
+}
+
+header{ 
+    min-height:50px;
+    background:lightcyan; 
+}
+  
+  footer{ 
+    min-height:50px; 
+    background:PapayaWhip; 
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section{
+    margin-top: 200px;
+}
+
+.container{
+    max-width: 1100px;
+}
+
+.navbar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    border-bottom: 1px solid var(--second-color);
+}
+
+.navbar .nav-wrapper{
+    background-color: var(--main-color);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.nav-wrapper .logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: -150px;
+}
+
+
+.nav-wrapper .logo .nama-logo{
+    font-size: 1.25rem;
+    font-family: var(--main-color);
+    font-weight: 300;
+    color: var(--second-color);
+}
+
+
+
+.nav-wrapper .menu-wrapper{
+    display: flex;
+    gap: 50 px;
+}
+
+.nav-wrapper .menu-wrapper .menu{
+    display: flex;
+    gap: 50px;
+    margin-right: -150px;
+}
+
+.menu-wrapper .menu .menu-link{
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--second-color);
+}
+
+.menu-wrapper .menu .menu-link:hover{
+    color: #4070f4;
+}
+
+.menu-wrapper .menu .menu-link.active{
+    color: var(--body-color)
+}
+
+
+/* home start */
+.home{
+    display: flex;
+}
+
+/* mobil 1 */
+
+.item1-wrapper{
+    width: 346px;
+    height: 324px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: 1px solid rgba(255,255,255,1);
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.item1-wrapper .heading{
+    font-family: var(--second-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+
+.item1-wrapper .sub-heading{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.item1-wrapper .harga{
+    font-family: var(--second-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--second-color);
+    position: absolute;
+    top: 105px;
+    left: 40px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.item1-wrapper .fotomobil{
+    position: absolute;
+    top: 185px;
+    left : 20px;
+}
+
+.item1-wrapper .spek1{
+    display: flex;
+    flex-direction: column;
+}
+
+.item1-wrapper .seats1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 40px;
+    right: 44px;
+}
+
+.spek1 .seats1 .seatscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item1-wrapper .doors1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.spek1 .doors1 .doorscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item1-wrapper .ac1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 120px;
+    right: 78px;
+}
+
+.spek1 .ac1 .account1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+/* end mobil 1 */
+
+/* start mobil 2 */
+
+.item2-wrapper{
+    width: 346px;
+    height: 324px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 580px;
+    border: 1px solid rgba(255,255,255,1);
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.item2-wrapper .heading{
+    font-family: var(--second-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+
+.item2-wrapper .sub-heading{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.item2-wrapper .harga{
+    font-family: var(--second-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--second-color);
+    position: absolute;
+    top: 105px;
+    left: 40px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.item2-wrapper .fotomobil{
+    position: absolute;
+    top: 185px;
+    left : 20px;
+}
+
+.item2-wrapper .spek1{
+    display: flex;
+    flex-direction: column;
+}
+
+.item2-wrapper .seats1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 40px;
+    right: 44px;
+}
+
+.spek2 .seats1 .seatscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item2-wrapper .doors1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.spek2 .doors1 .doorscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item2-wrapper .ac1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 120px;
+    right: 78px;
+}
+
+.spek2 .ac1 .account1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+/* end mobil 2 */
+
+/* start mobil 3 */
+
+.item3-wrapper{
+    width: 346px;
+    height: 324px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 1060px;
+    border: 1px solid rgba(255,255,255,1);
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.item3-wrapper .heading{
+    font-family: var(--second-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+
+.item3-wrapper .sub-heading{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.item3-wrapper .harga{
+    font-family: var(--second-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--second-color);
+    position: absolute;
+    top: 105px;
+    left: 40px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.item3-wrapper .fotomobil{
+    position: absolute;
+    top: 185px;
+    left : 20px;
+}
+
+.item3-wrapper .spek1{
+    display: flex;
+    flex-direction: column;
+}
+
+.item3-wrapper .seats1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 40px;
+    right: 44px;
+}
+
+.spek3 .seats1 .seatscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item3-wrapper .doors1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.spek3 .doors1 .doorscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item3-wrapper .ac1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 120px;
+    right: 78px;
+}
+
+.spek3 .ac1 .account1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+/* end mobil 3 */
+
+/* start mobil 4 */
+
+.item4-wrapper{
+    width: 346px;
+    height: 324px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    border: 1px solid rgba(255,255,255,1);
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.item4-wrapper .heading{
+    font-family: var(--second-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+
+.item4-wrapper .sub-heading{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.item4-wrapper .harga{
+    font-family: var(--second-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--second-color);
+    position: absolute;
+    top: 105px;
+    left: 40px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.item4-wrapper .fotomobil{
+    position: absolute;
+    top: 180px;
+    left : 20px;
+    height: 135px;
+}
+
+.item4-wrapper .spek1{
+    display: flex;
+    flex-direction: column;
+}
+
+.item4-wrapper .seats1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 40px;
+    right: 44px;
+}
+
+.spek4 .seats1 .seatscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item4-wrapper .doors1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.spek4 .doors1 .doorscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item4-wrapper .ac1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 120px;
+    right: 78px;
+}
+
+.spek4 .ac1 .account1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+/* end mobil 4 */
+
+/* start mobil 5 */
+
+.item5-wrapper{
+    width: 346px;
+    height: 324px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 500px;
+    left: 580px;
+    border: 1px solid rgba(255,255,255,1);
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.item5-wrapper .heading{
+    font-family: var(--second-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+
+.item5-wrapper .sub-heading{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.item5-wrapper .harga{
+    font-family: var(--second-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--second-color);
+    position: absolute;
+    top: 105px;
+    left: 40px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.item5-wrapper .fotomobil{
+    position: absolute;
+    top: 180px;
+    left : 30px;
+}
+
+.item5-wrapper .spek1{
+    display: flex;
+    flex-direction: column;
+}
+
+.item5-wrapper .seats1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 40px;
+    right: 44px;
+}
+
+.spek5 .seats1 .seatscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item5-wrapper .doors1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.spek5 .doors1 .doorscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item5-wrapper .ac1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 120px;
+    right: 78px;
+}
+
+.spek5 .ac1 .account1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+/* end mobil 5 */
+
+/* start mobil 6 */
+
+.item6-wrapper{
+    width: 346px;
+    height: 324px;
+    background: rgba(0,0,0,1);
+    opacity: 1;
+    position: absolute;
+    top: 500px;
+    left: 1060px;
+    border: 1px solid rgba(255,255,255,1);
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.item6-wrapper .heading{
+    font-family: var(--second-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+
+.item6-wrapper .sub-heading{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--second-color);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.item6-wrapper .harga{
+    font-family: var(--second-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--second-color);
+    position: absolute;
+    top: 105px;
+    left: 40px;
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.item6-wrapper .fotomobil{
+    position: absolute;
+    height: 240px;
+    top: 135px;
+    left : 10px;
+}
+
+.item6-wrapper .spek1{
+    display: flex;
+    flex-direction: column;
+}
+
+.item6-wrapper .seats1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 40px;
+    right: 44px;
+}
+
+.spek6 .seats1 .seatscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item6-wrapper .doors1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.spek6 .doors1 .doorscount1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.item6-wrapper .ac1{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 120px;
+    right: 78px;
+}
+
+.spek6 .ac1 .account1{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+/* end mobil 6 */
+
+/* home end */
+
+.footer{
+    background-color: #000000;
+    border-top: 1px solid var(--second-color);
+}
+
+.footer .footer-wrapper{
+    background-color: var(--main-color);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.footer-wrapper .copyright{
+    font-size: 1rem;
+    font-family: var(--main-color);
+    font-weight: 300;
+    color: var(--second-color);
+    margin-left: -150px;
+}
+
+.footer-wrapper .terms{
+    font-size: 1rem;
+    font-family: var(--main-color);
+    font-weight: 300;
+    color: var(--second-color);
+    margin-right: -150px;
+}
